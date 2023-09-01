@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="meme.css">
+    <title>Cayetano's Meme Generator</title>
+</head>
+<body>
+    <h1>Let's Make a MEME!!!</h1>
+
+    <form id="memeInfo">
+    <label for="imgUrl">Image URL:</label><input type="text" id="imgUrl" placeholder="Enter URL" required>
+    <br>
+    <label for="topText" id="middleLabel">Top Text:</label><input type="text" id="topText" placeholder="Type top text" required>
+    <br>
+    <label for="bottomText">Bottom Text:</label><input type="text" id="bottomText" placeholder="Type bottom text" required>
+    <br>
+    <button type="button" class="button" id="makeBtn">Make Meme</button>
+    <br>
+    <button type="button" class="button" id="clearImgA">Clear First Image</button>
+    <button type="button" class="button" id="clearImgB">Clear Second Image</button>
+        </form>
+
+    <div class="imgContainer">
+       <div class="meme">
+            <div class="topCaptionA"></div>
+            <img src="" alt="Image" id="imageA">
+            <div class="bottomCaptionA"></div>
+       </div>
+       <div class="meme"> 
+            <div class="topCaptionB"></div>
+            <img src="" alt="Image" id="imageB">
+            <div class="bottomCaptionB"></div>
+       </div> 
+    </div>
+
+    
+
+    <script src="meme.js"></script>
+</body>
+</html>
+
